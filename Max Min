@@ -1,0 +1,14 @@
+class Solution:
+    def findSum(self,A,N): 
+        mini=float('inf')
+        maxi=-1
+        sum1=0
+        for i in range(N):
+            if A[i]<mini:
+                mini=A[i]
+            if maxi <A[i]:
+                maxi=A[i]
+        sum1=mini+maxi
+        return sum1
+            
+
